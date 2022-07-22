@@ -1,0 +1,95 @@
+
+
+.loancalculator{
+    justify-content: center;
+    text-align: center;
+    background: rgb(99, 98, 91);
+    margin:64px;
+    border-radius: 2%;
+}
+.form
+.right{
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+}
+.loancalculator
+.form
+.left{
+    background-image:url(Bank.jpeg);
+    background-size: 64px;
+    background-position: left;
+    background-clip: border-box;
+    justify-content: left;
+    text-align: left;
+    padding-left: 32px;
+    width: 100%;
+}
+.result{
+    justify-content: center;
+    text-align: center;
+    border-radius: 20%;
+    border:left 20%;
+    border: right 20%;
+    background: #c0cfd3;
+
+}
+
+.button{
+    justify-content: left;
+    text-align: left;
+    
+}
+.Schedule{
+    background: rgb(248, 248, 248);
+    border-bottom: 2%;
+}
+.Dates{
+    justify-content: left;
+    text-align: left;
+    background: rgb(194, 194, 197);
+}
+payment-schedule
+h1{
+    background: rgb(77, 57, 76);
+    font-size: 200;
+}
+.payment-schedule{
+    border-spacing: 2cm;
+}
+th {
+    text-align: right;
+    padding: 0 1rem 1rem 1rem;
+    width: 9em;
+    font-size: 1.2rem;
+  }
+  
+  td {
+    text-align: right;
+    padding: 1rem;
+}
+@media all and (max-width: 650px) {
+
+    body {
+      padding: 0;
+    }
+  
+    div#payment-schedule {
+      margin: 0;
+    }
+  
+    div#payment-schedule table th {
+      font-size: 3.5vw;
+      padding: 0 .25em 1em .25em;
+    }
+  
+    div#payment-schedule table td {
+      font-size: 3.05vw;
+      padding: .25em;
+    }
+  
+  }
+  table {
+    width: 70%;
+  }
+

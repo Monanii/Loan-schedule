@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loancalculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  
+<div class="loancalculator">
+  <div class="top"> 
+    <h1> Loan Calculator</h1></div>
+    <br>
+    <br>
+ <div class="form">
+  <div class="right">
+    <h2>Amount:  <input type="number" [(ngModel)]="loanAmount"/></h2>
+    <br>
+    <h2>Months:  <input type="number" [(ngModel)]="tenure"/></h2> 
+    <br>
+    <h2>Interest:<input type="number" [(ngModel)]="interest"/></h2>
+ <br>
+
+ </div>
+ <form action="#">
+ <div class="result">
+  <h1>Monthly installments:{{emi}}sh</h1>
+  </div>
+  <div class="result">
+  <h1>Total amount:{{outstandingAmount}}sh</h1>
+  </div>
+  <div class="result">
+  <h1>Interest Payable :{{interestaccrued}}sh</h1>
+ </div>
+</form>
+ <div class="button">
+  <button mat-button color="Accent"
+   style="background-color:rgb(104, 138, 184);"
+  (click)="cal()">Calculate</button>
+ </div>
+ <div class="Schedule">
+  <div class="Dates">
+  <div>
+    <h1>Monthly Payment</h1>
+    <h1>{{emi}}sh</h1>
+  </div>
+  <div>
+    <h1>Total Interest</h1>
+    <h1>{{interestaccrued}}sh</h1>
+  </div>
+  <div id="rundiv">
+    <button mat-button color="Accent"
+   style="background-color:rgb(104, 138, 190);"
+  (click)="Build()">Build Schedule</button>
+  </div>
+</div>
+  <div id="payment-schedule">
+    <h1>Payment Schedule</h1>
+    
+    <table>
+      <th *ngFor="let column of header">
+        {{column}}
+      </th>
+          <tr *ngFor="let t of table;">
+            <td>{{t.Months}}</td>
+            <td>{{t.Principal}}</td>
+            <td>{{t.InterestPayable}}</td>
+            <td>{{t.Balance}}</td>
+           </tr>
+       
+       
+     
+    
+    
+    </table>
+    
+   
+      
+</div>
+ </div>
+
+
+</div>
+</div>
+</body>
+</html>
+
